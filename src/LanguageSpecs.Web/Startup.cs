@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.ApplicationInsights.AspNetCore;
 
 namespace LanguageSpecs.Web
 {
@@ -19,6 +20,12 @@ namespace LanguageSpecs.Web
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
+
+            if (env.IsDevelopment())
+            {
+                builder.AddApplicationInsightsSettings(developerMode: true);
+            }
+
             Configuration = builder.Build();
         }
 
@@ -29,6 +36,7 @@ namespace LanguageSpecs.Web
         {
             // Add framework services.
             services.AddMvc();
+            services.AddApplicationInsightsTelemetry(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

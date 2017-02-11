@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="~/css/theme.min.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/css/theme-color.min.css" asp-append-version="true" />
     </environment>
+    @Html.Raw(JavaScriptSnippet.FullScript)
     @await Html.PartialAsync("_GoogleAnalyticsPartial")
 </head>
 <body>
