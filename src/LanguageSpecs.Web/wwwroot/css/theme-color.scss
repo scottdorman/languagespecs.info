@@ -1,0 +1,53 @@
+﻿$dark: #b5b2b2;
+$light: #dad9d9;
+$base-color: #2980b9;
+
+$border-color: $base-color;
+$link-color: darken($base-color, 5%);
+$text-color: darken($base-color, 25%);
+
+ body {
+    //background: lighten($light, 8%);
+    color: $text-color;
+    border-color: $border-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $text-color;
+}
+
+hr, .hr {
+    border-color: lighten($border-color, 25%);
+}
+
+a {
+    color: $link-color;
+
+    &:hover {
+        color: darken($link-color, 15%);
+
+        img {
+            opacity: .75;
+        }
+    }
+}
+.marketing-text {
+    border-color: lighten($border-color, 25%);
+}
+
+.specs {
+    .spec-block {
+
+        .spec-block-header {
+            border-color: lighten($border-color, 45%);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        .contact {
+            border-top-color: lighten($border-color, 40%);
+        }
+    }
+}

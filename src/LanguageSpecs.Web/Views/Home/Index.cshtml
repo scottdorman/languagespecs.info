@@ -1,0 +1,29 @@
+﻿@model IEnumerable<LanguageSpecData>
+
+<div class="container">
+    <section class="marketing-text clearfix">
+        <div class="col-md-12 col-sm-12">
+            <h1>All of your language specs, all in one place</h1>
+            <p>The easiest way to find the formal language specification for your favorite programming language.</p>
+        </div>
+    </section>
+    <section class="clearfix">
+        <div class="col-md-12 col-sm-12">
+            <div class="row">
+                <div class="specs">
+                    @foreach (var specData in Model)
+                    {
+                        <div class="col-md-2 col-sm-2 spec-block m-b-4 text-center">
+                            <div class="spec-block-header">
+                                <a href="@specData.SpecUrl">
+                                    @await Component.InvokeAsync("Icon", new { model = specData })
+                                </a>
+                                <h2>@specData.Title</h2>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
