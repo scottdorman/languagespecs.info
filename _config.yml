@@ -1,5 +1,4 @@
-url: "https://scottdorman.github.io"
-baseurl: "languagespecs.info" # For project pages, this should be the project name; otherwise, leave it blank.
+url: "https://languagespecs.info/"
 
 sass:
     style: compressed
