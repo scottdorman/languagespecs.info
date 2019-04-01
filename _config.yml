@@ -1,0 +1,51 @@
+url: "https://scottdorman.github.io"
+baseurl: "languagespecs.info" # For project pages, this should be the project name; otherwise, leave it blank.
+
+sass:
+    style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# Output options (more information on Jekyll's site)
+encoding: UTF-8
+timezone: America/New_York
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+paginate: 5
+kramdown:
+  input: GFM
+  
+google_analytics:
+   id: "UA-2662385-4"
+  
+# SEO configuration
+
+
+twitter:
+  username: sdorman
+  card: summary
+
+social:
+  name: Scott Dorman
+  links:
+    - https://twitter.com/sdorman
+    - https://www.facebook.com/scottdorman
+    - https://www.linkedin.com/in/scottorman
+    - https://github.com/scottdorman
+    - https://stackoverflow.com/users/1559
+    - https://mvp.microsoft.com/en-us/PublicProfile/4014220
+
+# Exclude these files from production site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

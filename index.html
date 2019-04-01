@@ -1,0 +1,30 @@
+---
+layout: default
+title: All your language specs, in one place
+---
+
+<div class="profile-header">
+    <div class="row mt-12 mb-5">
+        <div class="col-sm">
+            <h1>All your language specs, in one place</h1>
+            <h3>The easiest way to find the formal language specification for your favorite programming language.</h3>
+        </div>
+    </div>
+</div>
+    <div class="row">
+        <ul class="list-inline pt-4 mt-4">
+	        {%- for specData in site.data.specs -%}
+	        <li class="list-inline-item spec-block px-3 my-3 border-bottom">
+	            <a href="{{ specData.specUrl }}" target="_blank" title="{{ specData.title }}">
+					{%- if specData.icon -%}
+					<span class="icon {{ specData.icon }}"></span>
+					{%- else -%}
+					<img class="icon icon-logo img-fluid" src="{{ site.url }}/assets/img/{{ specData.logo }}"/>
+					{%- endif -%}
+	                <span class="sr-only">{{ element.title }}</span>
+	            </a>
+				<p class="text-center text-muted">{{ specData.title }}</p>
+	        </li>
+	        {%- endfor -%}
+	    </ul>
+    </div>
