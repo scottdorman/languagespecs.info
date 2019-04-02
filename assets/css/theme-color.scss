@@ -55,6 +55,13 @@ a {
     }
 }
 
-.spec-block:hover {
-    background-color: $gray-lightest;
+.spec-block {
+   a {
+     &:hover {
+        text-decoration: none;
+     }
+   }
+   &:hover {
+      background-color: $gray-lightest;
+   }
 }
