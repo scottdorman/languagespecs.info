@@ -55,23 +55,6 @@ a {
     }
 }
 
-.marketing-text {
-    border-color: $border-color;
-}
-
-.specs {
-    .spec-block {
-
-        .spec-block-header {
-            border-color: lighten($border-color, 45%);
-        }
-    }
-}
-
-@media (max-width: 992px) {
-    footer {
-        .contact {
-            border-top-color: lighten($border-color, 40%);
-        }
-    }
+.spec-block:hover {
+    background-color: $gray-lightest;
 }
