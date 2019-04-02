@@ -73,5 +73,55 @@
     "title": "Clojure",
     "icon": "icon-pl-clojure",
     "specUrl": "https://clojure.org/guides/spec"
+  },
+  {
+    "title": "Kotlin",
+    "logo": "kotlin_250x250.png".
+    "specUrl": "https://kotlinlang.org/docs/reference/"
+  },
+  {
+    "title": "Swift",
+    "logo": "swift-64x64.png",
+    "specUrl": "https://swift.org/documentation/#the-swift-programming-language"
+  },
+  {
+    "title": "JavaScript",
+    "icon": "prog-js01",
+    "specUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "title": "Ruby",
+    "icon": "prog-ruby",
+    "specUrl": "https://docs.ruby-lang.org/en/"
+  },
+  {
+    "title": "Erlang",
+    "icon": "prog-erlang",
+    "specUrl": "http://erlang.org/doc/search/"
+  },
+  {
+    "title": "OCaml",
+    "logo": "ocaml-colour-transparent-icon.png",
+    "specUrl": "http://caml.inria.fr/pub/docs/manual-ocaml/"
+  },
+  {
+    "title": "Julia",
+    "logo": "julia.png",
+    "specUrl": "https://docs.julialang.org/en/v1/"
+  },
+  {
+    "title": "R",
+    "logo": "Rlogo.png",
+    "specUrl": "https://cran.r-project.org/manuals.html"
+  },
+  {
+    "title": "Lua",
+    "icon": "prog-lua02",
+    "specUrl": "https://www.lua.org/docs.html"
+  },
+  {
+    "title": "Groovy",
+    "icon": "pl-groovy-01",
+    "specUrl": "http://groovy-lang.org/documentation.html#languagespecification"
   }
 ]
