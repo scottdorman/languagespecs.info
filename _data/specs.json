@@ -86,17 +86,17 @@
   },
   {
     "title": "JavaScript",
-    "icon": "prog-js01",
+    "icon": "icon-prog-js01",
     "specUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
   {
     "title": "Ruby",
-    "icon": "prog-ruby",
+    "icon": "icon-prog-ruby",
     "specUrl": "https://docs.ruby-lang.org/en/"
   },
   {
     "title": "Erlang",
-    "icon": "prog-erlang",
+    "icon": "icon-prog-erlang",
     "specUrl": "http://erlang.org/doc/search/"
   },
   {
@@ -116,12 +116,12 @@
   },
   {
     "title": "Lua",
-    "icon": "prog-lua02",
+    "icon": "icon-prog-lua02",
     "specUrl": "https://www.lua.org/docs.html"
   },
   {
     "title": "Groovy",
-    "icon": "pl-groovy-01",
+    "icon": "icon-pl-groovy-01",
     "specUrl": "http://groovy-lang.org/documentation.html#languagespecification"
   }
 ]
